@@ -112,15 +112,15 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  border-radius: 18px;
+  background: transparent;
+  border-radius: 0;
 }
 
 .brand img,
 .footer-brand img {
-  width: 220px;
+  width: auto;
+  height: 64px;
   max-width: 100%;
-  height: auto;
 }
 
 .primary-nav {
@@ -358,6 +358,29 @@ a {
   margin-bottom: 16px;
 }
 
+.market-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.market-icon-wrap {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--light-blue);
+}
+
+.market-icon {
+  width: 30px;
+  height: 30px;
+}
+
 .market-card h3 {
   margin: 0;
   font-size: 24px;
@@ -366,7 +389,7 @@ a {
 }
 
 .market-en {
-  margin: 8px 0 14px;
+  margin: 6px 0 0;
   color: var(--blue);
   font-weight: 700;
 }
@@ -449,6 +472,10 @@ a {
   display: block;
 }
 
+.footer-brand img {
+  filter: brightness(0) invert(1);
+}
+
 @media (max-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -486,7 +513,8 @@ a {
 
   .brand img,
   .footer-brand img {
-    width: 210px;
+    height: 56px;
+    width: auto;
   }
 
   .nav-toggle {
@@ -597,6 +625,7 @@ a {
 @media (max-width: 640px) {
   .brand img,
   .footer-brand img {
-    width: 180px;
+    height: 48px;
+    width: auto;
   }
 }
