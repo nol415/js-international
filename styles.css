@@ -107,13 +107,20 @@ a {
   gap: 20px;
 }
 
-.brand,
-.footer-brand {
+.brand {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: transparent;
-  border-radius: 0;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 10px 14px;
 }
 
 .brand img,
@@ -376,9 +383,10 @@ a {
   background: var(--light-blue);
 }
 
-.market-icon {
+.market-icon-svg {
   width: 30px;
   height: 30px;
+  color: var(--navy);
 }
 
 .market-card h3 {
@@ -470,10 +478,6 @@ a {
 .footer-contact a {
   margin: 8px 0;
   display: block;
-}
-
-.footer-brand img {
-  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 1100px) {
